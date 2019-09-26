@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>Title</h1>
+    <div class="row">
+        <div class="col-md-8">
+            <img src="{{ detail.image_detail }}" alt="" width="10%">
+        </div>
+        <div class="col-md-4">
+            <h5>About the project:</h5>
+            <h1>{{ detail.title }}</h1>
+            <p>{{ detail.description }}</p>
+            <br>
+            <h5>Technologie Utilise:</h5>
+            <p>{{detail.tech}}</p>
+        </div>
+</div>
+{% endblock content %}
